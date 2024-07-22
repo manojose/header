@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Map</title>
+    <link rel="stylesheet" href="site-map.css">
+</head>
+<body>
+    <header style="background-color: red; color: black; padding: 10px; text-align: center;">
+        <h1>Site Map</h1>
+    </header>
+    <style>
+        /* site-map.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: purple;
+}
+
+header {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: red;
+}
+
+#site-map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.node {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.child-nodes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.node + .node {
+    margin-top: 20px;
+}
+
+.node h2, .node h3, .node h4 {
+    margin: 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+    </style>
+
+    <main style="padding: 20px; display: flex; justify-content: center;">
+        <div id="site-map" style="display: flex; flex-direction: column; align-items: center;">
+            <div class="node" style="background-color: #007bff; color: #fff; padding: 10px 20px; border-radius: 8px; text-align: center;">
+                <h2>Home</h2>
+                <div class="child-nodes">
+                    <div class="node" style="background-color: yellow; color: #fff; padding: 10px 20px; border-radius: 8px; margin: 10px 0;">
+                        <h3>About</h3>
+                        <div class="child-nodes">
+                            <div class="node" style="background-color: #17a2b8; color: #fff; padding: 10px 20px; border-radius: 8px; margin: 10px 0;">
+                                <h4>Team</h4>
+                            </div>
+                            <div class="node" style="background-color: #17a2b8; color: #fff; padding: 10px 20px; border-radius: 8px; margin: 10px 0;">
+                                <h4>Company</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="node" style="background-color: yellow; color: #fff; padding: 10px 20px; border-radius: 8px; margin: 10px 0;">
+                        <h3>Services</h3>
+                        <div class="child-nodes">
+                            <div class="node" style="background-color: #17a2b8; color: #fff; padding: 10px 20px; border-radius: 8px; margin: 10px 0;">
+                                <h4>Web Development</h4>
+                            </div>
+                            <div class="node" style="background-color: #17a2b8; color: #fff; padding: 10px 20px; border-radius: 8px; margin: 10px 0;">
+                                <h4>SEO</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="node" style="background-color: yellow; color: #fff; padding: 10px 20px; border-radius: 8px; margin: 10px 0;">
+                        <h3>Contact</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer style="background-color: #333; color: #fff; padding: 10px; text-align: center;">
+        <p>&copy; 2024 Site Map. All rights reserved.</p>
+    </footer>
+</body>
+</html>

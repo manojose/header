@@ -1,0 +1,11 @@
+#directory {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.directory {
+    max-width: 600px;
+    margin: 0 auto;
+}

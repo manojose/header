@@ -1,0 +1,14 @@
+#landing {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#landing h2 {
+    color: #333;
+}
+
+#landing p {
+    color: #666;
+}

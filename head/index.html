@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mano jose.p- Digital Markating</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Additional styles specific to this HTML file can go here */
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="navbar-brand" href="#"></a>
+            <ul class="navbar-nav">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skillset">SkillSet</a></li>
+                <li><a href="#certs">Certifications</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button id="theme-toggle">Toggle Theme</button>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="profile">
+                <img src="WhatsApp Image 2024-07-01 at 7.56.30 PM.jpeg" alt="MANO JOSE.P" class="img-fluid rounded-circle">
+                <div class="text">
+                    <h1>MANO JOSE.P</h1>
+                    <h3>DIGITAL MARKATING</h3>
+                </div>
+            </div>
+            <p>
+                I am a  the promotion of brands to connect with potential customers using the internet and other forms of digital communicationin a developer with rich experience in HTML CSS.
+            </p>
+        </section>
+
+        <section id="skillset">
+            <h2>Skillset</h2>
+            <div class="skills">
+                <div class="skill">
+                    <span class="label">Java</span>
+                    <progress max="100" value="80"></progress> 50%
+                </div>
+                <div class="skill">
+                    <span class="label">Python</span>
+                    <progress max="100" value="55"></progress> 75%
+                </div>
+            </div>
+       <section id="certs">
+            <h2>Certifications</h2>
+            <div class="certificates">
+                <div class="certificate-item">
+                    <img src="MANO JOSE P_Certificate_page-0001.jpg" alt="Web Design Certification">
+                    <img src="LOVE_pages-to-jpg-0001.jpg" alt="Web Design Certification">
+                    <p class="certificate-text">Web Design Certification</p>
+                </div>
+                </section>
+            <section id="resume">
+            <h2>Resume</h2>
+            <a href="ManoJose_Resume.pdf" download="ManoJose_Resume" class="btn btn-primary">Download Resume</a>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form id="contact-form" name="form">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="Name" placeholder="Enter Your Name" required><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="txt" rows="5" placeholder="Type Something..."></textarea><br><br>
+                <input type="button" value="Submit" onclick="validateForm()">
+            </form>
+            <div class="social-icons">
+                <a href="mailto:22monesh@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/mano-jose-493454248/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://https://github.com/manojose" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mano jose.p. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('black-theme');
+            document.querySelectorAll('section').forEach(section => {
+                section.classList.toggle('black-theme');
+            });
+            document.querySelector('header').classList.toggle('black-theme');
+            document.querySelector('footer').classList.toggle('black-theme');
+            document.querySelector('nav').classList.toggle('black-theme');
+        });
+    </script>
+</body>
+</html>
